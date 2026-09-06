@@ -1,1 +1,66 @@
-<!DOCTYPE html><html lang="fr"><head><meta charset="utf-8"/><title>SIOS</title></head><body><h1>SIOS</h1></body></html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SIOS — L'intelligence propose. SIOS autorise.</title>
+<meta name="description" content="Authorization runtime for agents."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet"/>
+<style>
+:root{--bg:#09090b;--fg:#f4f4f5;--mu:#a1a1aa;--ln:#27272a;--ac:#c8ccd4}
+*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--fg);font-family:IBM Plex Sans,system-ui,sans-serif}
+a{color:inherit}header,main,footer{max-width:920px;margin:0 auto;padding:0 24px}
+header{display:flex;justify-content:space-between;align-items:center;padding:28px 24px}
+.k{font-family:IBM Plex Mono,monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--mu)}
+h1{font-family:Fraunces,Georgia,serif;font-weight:500;font-size:clamp(2.3rem,6.5vw,4.4rem);line-height:1.05;letter-spacing:-.03em;margin:40px 0 18px}
+.lede{font-size:1.1rem;line-height:1.6;color:var(--mu);max-width:36rem}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin:32px 0 56px}
+.cta a{display:inline-flex;min-height:44px;align-items:center;padding:0 18px;border-radius:6px;text-decoration:none;font-size:.9rem}
+.pri{background:var(--ac);color:#111;font-weight:500}.sec{border:1px solid var(--ln)}
+.grid{display:grid;gap:12px}@media(min-width:720px){.grid{grid-template-columns:1fr 1fr 1fr}}
+article{border:1px solid var(--ln);border-radius:10px;padding:22px}
+article h2{font-family:Fraunces,serif;font-weight:500;font-size:1.3rem;margin:0 0 8px}
+article p{color:var(--mu);font-size:.92rem;line-height:1.55;margin:0}
+pre{background:#111;border:1px solid var(--ln);border-radius:10px;padding:18px;overflow:auto;font-family:IBM Plex Mono,monospace;font-size:12px;color:var(--mu)}
+section{padding:40px 0}footer{padding:40px 24px 72px;color:var(--mu);font-size:.85rem;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.line{border-top:1px solid var(--ln)}
+</style>
+</head>
+<body>
+<header><span class="k">SIOS</span><a class="k" href="https://velyx.org">VELYX</a></header>
+<main>
+<p class="k">Authorization runtime</p>
+<h1>L'intelligence propose.<br/>SIOS autorise le réel.</h1>
+<p class="lede">Tu définis les frontières. L'agent reste libre à l'intérieur. Rien ne touche le monde sans un jeton lié à cette action, cette cible, ces paramètres.</p>
+<div class="cta">
+  <a class="pri" href="https://github.com/19891501/AION-">Runtime GitHub</a>
+  <a class="sec" href="https://velyx.org">Le lab — Velyx</a>
+</div>
+<div class="grid">
+  <article><h2>Cadre</h2><p>Interdit. Accord humain. Limites. Délégation. Irréversible. Tout le reste est libre.</p></article>
+  <article><h2>Preuve</h2><p>Veritas juge le dossier. L'Arbitre fixe le niveau d'autorité. R4 bloque l'agrégation.</p></article>
+  <article><h2>Porte</h2><p>HMAC lié à tau. Issue n'est pas execute. Sans jeton : effet 0. L'agent n'a jamais le secret.</p></article>
+</div>
+<section>
+  <p class="k">Connecteur MCP</p>
+  <h1 style="font-size:clamp(1.6rem,4vw,2.4rem);margin:12px 0 16px">L'agent n'a plus Stripe. Il a SIOS.</h1>
+  <p class="lede">Trois outils : lire le cadre, proposer une transition, lire le journal. Pas d'outil d'effet.</p>
+  <pre>{ "mcpServers": {
+  "aion-gate": {
+    "command": "python",
+    "args": ["-m", "aion", "mcp"]
+  }
+} }</pre>
+</section>
+<section class="line">
+  <p class="k">Honnêteté</p>
+  <p class="lede" style="margin-top:16px">SIOS n'est pas un chatbot plus intelligent. Le banc cognitif S2 est NO-GO. Ce qui est démontré : N attaques, 0 effet non autorisé.</p>
+</section>
+</main>
+<footer>
+  <span>SIOS · a product of <a href="https://velyx.org">Velyx</a></span>
+  <span>AION kernel · Preuve B</span>
+</footer>
+</body>
+</html>
